@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masturi Delivery</title>
+    <link rel="stylesheet" href="pos_login.css">
+
+    <script src="https://kit.fontawesome.com/0380407b19.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aclonica&family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="logo_header">
+          <a href="index.html"><img src="img/escuro/Inserir_um_título_2_-removebg-preview 1 (1).png" id="logo" alt=""></a>
+        </div>
+        <div id="outros_header">
+            <label class="checkbox-custom" for="tema">
+                <input type="checkbox" class="troca-tema" id="tema" onclick="trocaDeTema()">
+                <span class="icone" id="unchecked"><i class="fa-solid fa-sun"></i></span>
+                <span class="icone" id="checked"><i class="fa-solid fa-moon"></i></span>
+            </label>
+            <a href="produtos.html" class="link-header">Produtos</a>
+            <a href="perfil.html" class="link-header">Perfil</a>
+           <a href="#" id="btn-entrar" onclick="toggleCarrinho()"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </header>
+    <section class="banner" id="banner">
+        <h2>O Japão Mais Perto de Você</h2>
+        <h3>Culinária oriental rápida, fresca e irresistível.</h3>
+        <div class="busca">
+            <input type="text" placeholder="Faça sua pesquisa aqui">
+        </div>
+    </section>
+    <section class="mais_procurados" id="mais_procurados">
+        <h2>Mais procurados</h2>
+        <div class="categorias-mp" id="categorias-mp">
+            <div class="sushi-mp" id="sushi-mp">
+                <p class="titulo-categoria-mp">SUSHI</p>
+                <img src="img/sushi.png" alt="">
+            </div>
+            <div id="sashimi-mp">
+                <p class="titulo-categoria-mp">SASHIMI</p>
+                <img src="img/sashimi.png" alt="">
+            </div>
+            <div id="temaki-mp">
+                <p class="titulo-categoria-mp">TEMAKI</p>
+                <img src="img/temaki.png" alt="">
+            </div>
+        </div>
+        <button id="btn-saibamais">SAIBA MAIS</button>
+    </section>
+    <section id="destaques">
+        <h2>Produtos em destaque</h2>
+        <div>
+            <div class="destaque_produto">
+                <div class="img_destaque"><img src="img/destaque1.png" alt=""></div>
+                <p>SUPER DESTAQUE</p>
+                <img src="img/5estrelas.svg" alt="">
+            </div>
+            <div class="destaque_produto">
+                <div class="img_destaque"><img src="img/destaque2.png" alt=""></div>
+                <p>SUPER DESTAQUE</p>
+                <img src="img/5estrelas.svg" alt="">
+            </div>
+            <div class="destaque_produto">
+                <div class="img_destaque"><img src="img/destaque3.png" alt=""></div>
+                <p>SUPER DESTAQUE</p>
+                <img src="img/5estrelas.svg" alt="">
+            </div>
+            <div class="destaque_produto">
+                <div class="img_destaque"><img src="img/destaque4.png" alt=""></div>
+                <p>SUPER DESTAQUE</p>
+                <img src="img/5estrelas.svg" alt="">
+            </div>
+            <div class="destaque_produto">
+                <div class="img_destaque"><img src="img/destaque5.png" alt=""></div>
+                <p>SUPER DESTAQUE</p>
+                <img src="img/5estrelas.svg" alt="">
+            </div>
+            <div class="destaque_produto">
+                <div class="img_destaque"><img src="img/destaque6.png" alt=""></div>
+                <p>SUPER DESTAQUE</p>
+                <img src="img/5estrelas.svg" alt="">
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <div id="redes_rodape">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        <div id="info_rodape">
+            <h5>Masturi Delivery</h5>
+            <a href="#">Início</a>
+            <a href="#">Cadastro</a>
+            <a href="#">Produtos</a>
+            <a href="sobre.html">Sobre o Masturi</a>
+        </div>
+        <div id="info_rodape">
+            <h5>Login</h5>
+            <a href="#">Histórico</a>
+            <a href="#">Carrinho</a>
+            <a href="#">Perfil</a>
+            <a href="#">Entrar</a>
+        </div>
+        <div id="info_rodape">
+            <h5>Contato</h5>
+            <a href="#">matsuri_delivery@gmail.com</a>
+            <a href="#">(31) 9 9999-9999</a>
+            <a href="#">R. matsuri 67 - Bairro Delivery</a>
+        </div>
+    </footer>
+
+
+<aside id="carrinho-aba" class="carrinho-aba">
+    <div class="topo-carrinho">
+        <h2>Seu Carrinho</h2>
+        <button id="btn-fechar" onclick="toggleCarrinho()"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+
+    <div class="conteudo-carrinho">
+        <p>Seu carrinho está vazio.</p>
+    </div>
+</aside>
+    <script src="script.js"></script>
+</body>
+
+</html>

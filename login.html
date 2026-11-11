@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masturi Delivery</title>
+    <link rel="stylesheet" href="login.css">
+
+    <script src="https://kit.fontawesome.com/0380407b19.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aclonica&family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="logo_header">
+            <a href="index.html"><img src="img/escuro/Inserir_um_título_2_-removebg-preview 1 (1).png" id="logo"
+                    alt=""></a>
+        </div>
+        <div id="outros_header">
+            <label class="checkbox-custom" for="tema">
+                <input type="checkbox" class="troca-tema" id="tema" onclick="trocaDeTema()">
+                <span class="icone" id="unchecked"><i class="fa-solid fa-sun"></i></span>
+                <span class="icone" id="checked"><i class="fa-solid fa-moon"></i></span>
+            </label>
+            <a href="produtos.html" class="link-header">Produtos</a>
+            <a href="cadastro.html" class="link-header">Criar conta</a>
+            <a href="login.html" id="btn-entrar">Entrar</a>
+        </div>
+    </header>
+    <section class="banner" id="banner">
+        <h2>O Japão Mais Perto de Você</h2>
+        <h3>Culinária oriental rápida, fresca e irresistível.</h3>
+    </section>
+
+    <section id="entrar">
+
+        <div class="conteudo-entrar">
+            <div class="img-entrar">
+                <img src="img/Sushi voador com hashis e ingredientes 1.png" alt="">
+            </div>
+
+            <form id="login-form" onsubmit="fazerLogin(event)">
+                <div class="campo">
+                    <input type="email" id="login-email" placeholder="E-mail:" required>
+                </div>
+
+                <div class="campo">
+                    <input type="password" id="login-senha" placeholder="Senha:">
+                </div>
+
+                <button type="submit" class="btn-entrar">Entrar</button>
+            </form>
+        </div>
+    </section>
+
+
+    <footer>
+        <div id="redes_rodape">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        <div id="info_rodape">
+            <h5>Masturi Delivery</h5>
+            <a href="#">Início</a>
+            <a href="#">entrar</a>
+            <a href="#">Produtos</a>
+            <a href="sobre.html">Sobre o Masturi</a>
+        </div>
+        <div id="info_rodape">
+            <h5>Login</h5>
+            <a href="#">Histórico</a>
+            <a href="#">Carrinho</a>
+            <a href="#">Perfil</a>
+            <a href="#">Entrar</a>
+        </div>
+        <div id="info_rodape">
+            <h5>Contato</h5>
+            <a href="#">matsuri_delivery@gmail.com</a>
+            <a href="#">(31) 99999-9999</a>
+            <a href="#">R. Matsuri 67 - Bairro Delivery</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

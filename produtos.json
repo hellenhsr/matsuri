@@ -1,0 +1,62 @@
+{
+  "ofertas": [
+    {
+      "id": 1,
+      "nome": "BARCA DE SUSHI",
+      "desc": "Barca pequena com 17 Peças, 13 Sushis e 4 Sashimi",
+      "preco": 40.00,
+      "img": "img/destaque4.png"
+    },
+    {
+      "id": 2,
+      "nome": "SUPER TEMAKI",
+      "desc": "Temaki recheado com cream cheese",
+      "preco": 30.00,
+      "img": "img/temaki.png"
+    },
+    {
+      "id": 3,
+      "nome": "SUPER BARCA DE SUSHI",
+      "desc": "Combinado de salmão com cerca de 26 peças (Sashimi, Niguiris, Uramakis e Jows).",
+      "preco": 50.00,
+      "img": "./img/destaque3.png"
+    },
+    {
+      "id": 4,
+      "nome": "HOSSOMAKI",
+      "desc": "Alga nori, arroz temperado, salmão fresco e cream cheese (1 unidade).",
+      "preco": 30.00,
+      "img": "img/destaque1.png"
+    }
+  ],
+  "produtos": [
+    {
+      "id": 5,
+      "nome": "BARCA DE SUSHI",
+      "desc": "Barca pequena com 17 Peças, 13 Sushis e 4 Sashimi",
+      "preco": 40.00,
+      "img": "img/sashimi 1.png"
+    },
+    {
+      "id": 6,
+      "nome": "SUPER TEMAKI",
+      "desc": "Temaki recheado com cream cheese",
+      "preco": 30.00,
+      "img": "img/sushi-hotroll-2 1.png"
+    },
+    {
+      "id": 7,
+      "nome": "SUPER BARCA DE SUSHI",
+      "desc": "Combinado de salmão com cerca de 26 peças (Sashimi, Niguiris, Uramakis e Jows).",
+      "preco": 50.00,
+      "img": "./img/california-roll-with-tobiko.png"
+    },
+    {
+      "id": 8,
+      "nome": "HOSSOMAKI",
+      "desc": "Alga nori, arroz temperado, salmão fresco e cream cheese (1 unidade).",
+      "preco": 30.00,
+      "img": "img/Uni.png"
+    }
+  ]
+}

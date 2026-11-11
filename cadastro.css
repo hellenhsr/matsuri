@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+
+  
+}
+:root{
+    --aclonica: "Aclonica", sans-serif;
+    --arsenal:  "Arsenal", sans-serif;
+    --fredoka: "Fredoka", sans-serif;
+    --inter: "Inter", sans-serif;
+
+    --background-gradient: linear-gradient(180deg, #4f5640 0%, #22241f 100%);
+    --background-header: #272922;
+    --highlight: #D2DABE;
+    --textos: #9F8660;
+    --verde: #758159;
+    --fundo:#000000;
+    --texto: #1E1E1E;
+    --titulos: #ffff;
+    --fundo-container: #272924;
+    --input:#4F5640;
+    --form-container:#272922;
+}
+.claro{
+    --aclonica: "Aclonica", sans-serif;
+    --arsenal:  "Arsenal", sans-serif;
+    --fredoka: "Fredoka", sans-serif;
+    --inter: "Inter", sans-serif;
+    
+    --background-gradient: linear-gradient(180deg, #DEE2D5 0%, #99A47F 100%);
+    --background-header: #99A47F;
+    --highlight: #D2DABE;
+    --texto: #4F5640;
+    --titulos: #1E1E1E;
+    --fundo:#758159;
+    --textos: #4F5640;
+    --fundo-container: #D2DABE;
+    --input:#D2DABE;
+    --form-container:#94A470;
+
+}
+body{
+    background: var(--background-gradient);
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background-header);
+    font-family: var(--aclonica);
+    width: 100%;
+    position: sticky;
+    padding-right: 1vw;
+    top: -1px;
+    z-index: 100;
+    
+}
+#outros_header>a{
+    margin-left: 1vw;
+}
+.checkbox-custom {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+}
+.checkbox-custom input[type="checkbox"] {
+    display: none;
+}
+.checkbox-custom #unchecked {
+    display: inline-block;
+}
+.checkbox-custom #checked {
+    display: none;
+}
+.checkbox-custom input[type="checkbox"]:checked ~ #unchecked {
+    display: none;
+}
+.checkbox-custom input[type="checkbox"]:checked ~ #checked {
+    display: inline-block;
+}
+.checkbox-custom{
+    background-color: var(--highlight);
+    padding: 5px;
+    border-radius: 15px;
+}
+.checkbox-custom>span{
+    color: var(--textos);
+    padding-top: 2px;
+}
+.link-header{
+    color: var(--textos);
+    text-decoration: none;
+    position: relative;
+}
+.link-header:hover{
+    color: var(--highlight);
+    transition: ease 0.3s;
+}
+.link-header::after{
+    content: "";
+    position: absolute;
+    background-color: var(--highlight);
+    height: 3px;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    transform: scale(0);
+    transition: ease 0.3s;
+}
+.link-header:hover::after{
+    transform: scale(1);
+}
+#btn-entrar{
+    text-decoration: none;
+    background-color: var(--textos);
+    border-radius: 15px;
+    padding: 5px;
+    color: var(--background-header);
+    transition: ease 0.3s;
+}
+#btn-entrar:hover{
+    background-color: var(--highlight);
+    transition: ease 0.3s;
+}
+
+.banner{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 50px;
+    background-position: 0%;
+}
+
+
+.banner>h2{
+    display: flex;
+    justify-content: center;
+    letter-spacing: 10%;
+    font-family: "Arsenal", sans-serif;
+    color: var(--titulos);
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.banner>h3{
+    display: flex;
+    justify-content: center;
+    letter-spacing: 10%;
+    font-family: "Arsenal", sans-serif;
+    color: var(--titulos);
+    font-size: 20px;
+    font-weight: 300;
+ }
+
+#cadastro {
+    width: 1200px;
+    margin: 40px auto;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.conteudo-cadastro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 40px;
+}
+
+.img-cadastro {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-cadastro img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.4));
+}
+
+
+form {
+    width: 48%;
+    background-color: var(--form-container);
+    border-radius: 20px;
+    padding: 40px 30px;
+    box-shadow: 0px 10px 0px #1a1b18;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.campo {
+    width: 100%;
+}
+
+.linha {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+form input {
+    width: 100%;
+    height: 50px;
+    background-color: var(--input);
+    border: none;
+    border-radius: 12px;
+    padding: 0px 20px;
+    font-family: var(--fredoka);
+    font-size: 18px;
+    color: var(--titulos);
+    outline: none;
+}
+
+form input::placeholder {
+    color: var(--texto);
+}
+
+form input:focus {
+    box-shadow: 0px 0px 0px 2px #d2dabe;
+}
+
+.btn-cadastrar {
+    width: 100%;
+    height: 55px;
+    background-color: var(--fundo);
+    border: none;
+    border-radius: 12px;
+    font-family: var(--fredoka);
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--textos);
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.btn-cadastrar:hover {
+    background-color: #656d55;
+    color: #d2dabe;
+    transform: translateY(-2px);
+}
+
+.link-login {
+    color: var(--textos);
+    font-family: var(--inter);
+    font-size: 14px;
+    text-decoration: none;
+    margin-top: 5px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.link-login:hover {
+    color: #ffffff;
+}
+
+ footer{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: var(--background-gradient);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    padding-top: 30px;
+ }
+
+
+#redes_rodape{
+    display: grid;
+    grid-template-columns: repeat(1fr,4fr);
+    gap: 10px;
+    padding-top: 20px ;
+    padding-left: 20px;
+}
+
+#redes_rodape a{
+    text-decoration: none;
+    color: var(--textos);
+    font-size: 30px;
+}
+
+#info_rodape{
+    display: grid;
+    grid-template-columns: repeat(1fr,4fr);
+    color: var(--textos);
+    padding-right: 20px;
+}
+#info_rodape > h5{
+    font-family: var(--aclonica);
+    font-size: 20px;
+    text-align: center;
+}
+
+#info_rodape > a{
+    font-family: var(--fredoka);
+    font-size: 15px;
+    text-decoration: none;
+     color: var(--textos);
+}
+
+
+
+
+
+ 
+
+ 
+
+ 
+
+ 

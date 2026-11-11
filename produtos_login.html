@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masturi Delivery</title>
+    <link rel="stylesheet" href="produtos.css">
+
+    <script src="https://kit.fontawesome.com/0380407b19.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="logo_header">
+            <a href="index.html"><img src="img/escuro/Inserir_um_título_2_-removebg-preview 1 (1).png" id="logo" alt=""></a>
+        </div>
+        <div id="outros_header">
+            <label class="checkbox-custom" for="tema">
+                <input type="checkbox" class="troca-tema" id="tema" onclick="trocaDeTema()">
+                <span class="icone" id="unchecked"><i class="fa-solid fa-sun"></i></span>
+                <span class="icone" id="checked"><i class="fa-solid fa-moon"></i></span>
+            </label>
+            <a href="produtos.html" class="link-header">Produtos</a>
+            <a href="cadastro.html" class="link-header">Criar conta</a>
+            <a href="#" id="btn-entrar" onclick="toggleCarrinho()"><i class="fa-solid fa-cart-shopping"></i> Carrinho</a>
+        </div>
+    </header>
+
+    <section class="banner" id="banner">
+        <h2>O Japão Mais Perto de Você</h2>
+        <h3>Culinária oriental rápida, fresca e irresistível.</h3>
+    </section>
+
+    <section id="ofertas">
+        <h2>OFERTAS</h2>
+        <div class="lista-ofertas">
+
+            <div class="produto">
+                <div class="img">
+                    <img src="img/destaque4.png" alt="">
+                </div>
+                <div class="info">
+                    <h3 class="nome_produto">BARCA DE SUSHI</h3>
+                    <p class="desc">Barca pequena com 17 Peças, 13 Sushis e 4 Sashimi</p>
+                    <p class="preco">R$ 40,00</p>
+                    <button class="btn_adicionar" onclick="adicionarCard(this)">Adicionar</button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <div class="img">
+                    <img src="img/temaki.png" alt="">
+                </div>
+                <div class="info">
+                    <h3 class="nome_produto">SUPER TEMAKI</h3>
+                    <p class="desc">Temaki recheado com cream cheese</p>
+                    <p class="preco">R$ 30,00</p>
+                    <button class="btn_adicionar" onclick="adicionarCard(this)">Adicionar</button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <div class="img">
+                    <img src="./img/destaque3.png" alt="">
+                </div>
+                <div class="info">
+                    <h3 class="nome_produto">SUPER BARCA DE SUSHI</h3>
+                    <p class="desc">Combinado de salmão com cerca de 26 peças (Sashimi, Niguiris, Uramakis e Jows).</p>
+                    <p class="preco">R$ 50,00</p>
+                    <button class="btn_adicionar" onclick="adicionarCard(this)">Adicionar</button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <div class="img">
+                    <img src="img/destaque1.png" alt="">
+                </div>
+                <div class="info">
+                    <h3 class="nome_produto">HOSSOMAKI</h3>
+                    <p class="desc">Alga nori, arroz temperado, salmão fresco e cream cheese (1 unidade).</p>
+                    <p class="preco">R$ 30,00</p>
+                    <button class="btn_adicionar" onclick="adicionarCard(this)">Adicionar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="produtos">
+        <h2>PRODUTOS</h2>
+        <div class="lista-produtos">
+
+            <div class="produto">
+                <div class="img">
+                    <img src="img/sashimi 1.png" alt="">
+                </div>
+                <div class="info">
+                    <h3 class="nome_produto">SASHIMI ESPECIAL</h3>
+                    <p class="desc">Barca pequena com 17 Peças, 13 Sushis e 4 Sashimi</p>
+                    <p class="preco">R$ 40,00</p>
+                    <button class="btn_adicionar" onclick="adicionarCard(this)">Adicionar</button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <div class="img">
+                    <img src="img/sushi-hotroll-2 1.png" alt="">
+                </div>
+                <div class="info">
+                    <h3 class="nome_produto">HOT ROLL</h3>
+                    <p class="desc">Temaki recheado com cream cheese</p>
+                    <p class="preco">R$ 30,00</p>
+                    <button class="btn_adicionar" onclick="adicionarCard(this)">Adicionar</button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <div class="img">
+                    <img src="./img/california-roll-with-tobiko.png" alt="">
+                </div>
+                <div class="info">
+                    <h3 class="nome_produto">CALIFORNIA ROLL</h3>
+                    <p class="desc">Combinado de salmão com cerca de 26 peças (Sashimi, Niguiris, Uramakis e Jows).</p>
+                    <p class="preco">R$ 50,00</p>
+                    <button class="btn_adicionar" onclick="adicionarCard(this)">Adicionar</button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <div class="img">
+                    <img src="img/Uni.png" alt="">
+                </div>
+                <div class="info">
+                    <h3 class="nome_produto">NIGUIRI VARIADO</h3>
+                    <p class="desc">Alga nori, arroz temperado, salmão fresco e cream cheese (1 unidade).</p>
+                    <p class="preco">R$ 30,00</p>
+                    <button class="btn_adicionar" onclick="adicionarCard(this)">Adicionar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <aside id="carrinho-aba" class="carrinho-aba">
+        <div class="topo-carrinho">
+            <h2>Seu Carrinho</h2>
+            <button id="btn-fechar" onclick="toggleCarrinho()"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <div class="lista-carrinho" id="lista-carrinho">
+
+        </div>
+
+        <div class="resumo-carrinho">
+            <div class="linha-resumo">
+                <span>Subtotal</span>
+                <span class="valor" id="val-subtotal">R$ 0,00</span>
+            </div>
+            <div class="linha-resumo">
+                <span>Frete</span>
+                <span class="valor" id="val-frete">R$ 0,00</span>
+            </div>
+            <div class="linha-resumo total">
+                <span>Total</span>
+                <span class="valor" id="val-total">R$ 0,00</span>
+            </div>
+
+            <button class="btn-pagamento">PAGAMENTO</button>
+            <button class="btn-continuar" onclick="toggleCarrinho()">CONTINUAR COMPRANDO</button>
+        </div>
+    </aside>
+
+    <footer>
+        <div id="redes_rodape">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        <div id="info_rodape">
+            <h5>Masturi Delivery</h5>
+            <a href="index.html">Início</a>
+            <a href="cadastro.html">Cadastro</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="sobre.html">Sobre o Masturi</a>
+        </div>
+        <div id="info_rodape">
+            <h5>Login</h5>
+            <a href="#">Histórico</a>
+            <a href="#" onclick="toggleCarrinho()">Carrinho</a>
+            <a href="cadastro.html">Perfil</a>
+            <a href="login.html">Entrar</a>
+        </div>
+        <div id="info_rodape">
+            <h5>Contato</h5>
+            <a href="#">matsuri_delivery@gmail.com</a>
+            <a href="#">(31) 9 9999-9999</a>
+            <a href="#">R. matsuri 67 - Bairro Delivery</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
